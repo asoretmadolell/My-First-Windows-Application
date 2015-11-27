@@ -6,5 +6,14 @@
 
 int wmain( int argc, WCHAR* argv[] )
 {
+	wprintf( L"\n------------------------\n\n" );
+
+	for( int i = 0; i < argc; i++ )
+	{
+		wprintf( L"Argument %d: %s \n", i, argv[ i ] );
+	}
+
+	wprintf( L"\n\n------------------------" );
+
 	return 0;
 }
